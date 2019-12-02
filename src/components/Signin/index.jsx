@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import SwitchTheme from '../SwitchTheme';
 
 export default function index() {
     return (
@@ -8,8 +10,11 @@ export default function index() {
                     <div className="wrap-login100">
                         <form className="login100-form validate-form">
                             <span className="login100-form-title p-b-26">
-                                Welcome
+                                Sign In
 					</span>
+                            <div className="text-center">
+                                <SwitchTheme />
+                            </div>
                             <span className="login100-form-title p-b-48">
                                 <i className="zmdi zmdi-font"></i>
                             </span>
@@ -36,14 +41,14 @@ export default function index() {
                                 </div>
                             </div>
 
-                            <div className="text-center p-t-115">
+                            <div className="text-center">
                                 <span className="txt1">
                                     Don’t have an account?
 						</span>
 
-                                <a className="txt2" href="#-">
+                                <Link className="txt2" to="sign-up">
                                     Sign Up
-						</a>
+						</Link>
                             </div>
                         </form>
                     </div>
