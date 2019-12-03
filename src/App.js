@@ -22,7 +22,7 @@ function App() {
     <ThemeContext.Provider value={theme}>
       <Router>
         <Navbar>
-          <SwitchTheme switchTheme={e => changeTheme(e)} />
+          <SwitchTheme switchTheme={e => changeTheme(e)} currentTheme={theme} />
         </Navbar>
         <Route path="/" exact component={Signin} />
         <Route path="/sign-up" component={Signup} />
