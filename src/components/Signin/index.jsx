@@ -41,14 +41,13 @@ export default function index() {
                                         </div>
                                     </div>
 
-                                    <div className="text-center">
-                                        <span className="txt1">
+                                    <div className="text-center m-t-5">
+                                        <span className="txt1 m-r-5">
                                             Don’t have an account?
-						</span>
-
+						                </span>
                                         <Link className="txt2" to="sign-up">
                                             Sign Up
-						</Link>
+						                </Link>
                                     </div>
                                 </form>
                             </div>

@@ -15,7 +15,7 @@ export default function index() {
                                         Sign up
                             </span>
 
-                                    <span className="login100-form-title p-b-48">
+                                    <span className="login100-form-title p-b-20">
                                         <i className="fa fa-user-plus" aria-hidden="true"></i>
                                     </span>
 
@@ -54,14 +54,14 @@ export default function index() {
                                         </div>
                                     </div>
 
-                                    <div className="text-center">
-                                        <span className="txt1">
+                                    <div className="text-center m-t-5">
+                                        <span className="txt1 m-r-5">
                                             Do you have an account?
-						</span>
+                                        </span>
 
                                         <Link className="txt2" to='/'>
                                             Sign in
-						</Link>
+						               </Link>
                                     </div>
                                 </form>
                             </div>
