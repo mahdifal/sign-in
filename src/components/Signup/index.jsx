@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import ThemeContext from '../Context/ThemeContext';
 
 export default function index() {
+
+    const handleSubmit = e => {
+        e.preventDefault();
+    }
+
     return (
         <ThemeContext.Consumer>
             {value =>
@@ -10,7 +15,7 @@ export default function index() {
                     <div className="limiter">
                         <div className={`container-login100 theme-${value}`}>
                             <div className={`wrap-login100 form-theme-${value}`}>
-                                <form className="login100-form validate-form">
+                                <form className="login100-form validate-form" onSubmit={e => handleSubmit(e)}>
                                     <span className="login100-form-title p-b-26">
                                         Sign up
                             </span>
