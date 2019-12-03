@@ -4,8 +4,7 @@ import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import ThemeContext from "./components/Context/ThemeContext";
 import SwitchTheme from "./components/SwitchTheme";
-
-import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   const getTheme = () => JSON.parse(localStorage.getItem("login-theme")) || "";
@@ -22,9 +21,9 @@ function App() {
   return (
     <ThemeContext.Provider value={theme}>
       <Router>
-        <div className="text-center">
+        <Navbar>
           <SwitchTheme switchTheme={e => changeTheme(e)} />
-        </div>
+        </Navbar>
         <Route path="/" exact component={Signin} />
         <Route path="/sign-up" component={Signup} />
       </Router>
