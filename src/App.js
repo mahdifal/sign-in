@@ -7,7 +7,8 @@ import SwitchTheme from "./components/SwitchTheme";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const getTheme = () => JSON.parse(localStorage.getItem("login-theme")) || "";
+  const getTheme = () =>
+    JSON.parse(localStorage.getItem("login-theme")) || "light";
   const [theme, setTheme] = useState(getTheme);
 
   const changeTheme = e => {
